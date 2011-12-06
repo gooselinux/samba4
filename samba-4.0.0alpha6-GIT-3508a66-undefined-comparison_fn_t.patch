@@ -1,0 +1,12 @@
+diff -up samba-4.0.0alpha6-GIT-3508a66/librpc/ndr/libndr.h.undefined-comparison_fn_t samba-4.0.0alpha6-GIT-3508a66/librpc/ndr/libndr.h
+--- samba-4.0.0alpha6-GIT-3508a66/librpc/ndr/libndr.h.undefined-comparison_fn_t	2008-12-11 20:30:02.000000000 -0500
++++ samba-4.0.0alpha6-GIT-3508a66/librpc/ndr/libndr.h	2008-12-11 20:30:14.000000000 -0500
+@@ -417,7 +417,7 @@ enum ndr_err_code ndr_token_store(TALLOC
+ 			 struct ndr_token_list **list, 
+ 			 const void *key, 
+ 			 uint32_t value);
+-enum ndr_err_code ndr_token_retrieve_cmp_fn(struct ndr_token_list **list, const void *key, uint32_t *v, int(*_cmp_fn)(const void*,const void*), bool _remove_tok);
++/*enum ndr_err_code ndr_token_retrieve_cmp_fn(struct ndr_token_list **list, const void *key, uint32_t *v, int(*_cmp_fn)(const void*,const void*), bool _remove_tok);*/
+ enum ndr_err_code ndr_token_retrieve(struct ndr_token_list **list, const void *key, uint32_t *v);
+ uint32_t ndr_token_peek(struct ndr_token_list **list, const void *key);
+ enum ndr_err_code ndr_pull_array_size(struct ndr_pull *ndr, const void *p);
